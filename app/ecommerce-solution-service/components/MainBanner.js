@@ -10,7 +10,12 @@ export default function Hero() {
         }}
       >
         <div className="container px-5 py-5">
-          <div className="hero-box">
+          <div className="hero-box" style={
+            {
+              maxWidth: '100%',
+              padding: '75px 0px'
+            }
+          }>
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <h1>

@@ -3,7 +3,7 @@ import { BiError } from "react-icons/bi";
 
 export default function BetterBuying() {
     return (
-        <>
+        
 
             <section className="container-fluid py-1 d-flex flex-column align-items-center gap-5">
 
@@ -62,6 +62,6 @@ export default function BetterBuying() {
 
             </section>
 
-        </>
+        
     );
 }

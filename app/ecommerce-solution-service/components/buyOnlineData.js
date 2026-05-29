@@ -1,5 +1,3 @@
-
-
 export const buyData= [
     {
         img: '/servicesolimg/buy1.png',
