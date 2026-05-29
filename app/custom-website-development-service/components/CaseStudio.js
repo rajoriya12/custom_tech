@@ -1,14 +1,13 @@
-
-
 "use client";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsChevronLeft, BsChevronRight } from "react-icons/bs";
-// 1. Import Swiper React components and modules
+
+// Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-// 2. Import Swiper styles
+// Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -35,41 +34,54 @@ const slides = [
 ];
 
 export default function CaseStudies() {
+
     return (
         <section
             className="container-fluid mt-5 position-relative"
             style={{ backgroundColor: "#fff" }}
         >
-            {/* Angled Black Header Background */}
 
             <section className="container-fluid p-0 position-relative">
+
                 {/* Header Banner */}
                 <div className="banners-containers banner-container">
-                    <div className="content-wrapper">
-                        <h2 className="pt-3">Case Studies</h2>
+
+                    <div className="content-wrapper animate-up">
+                        <h2 className="pt-3">
+                            Case Studies
+                        </h2>
                     </div>
+
                 </div>
 
                 <div className="position-relative">
+
                     <div
                         className="row justify-content-center align-items-center position-relative"
-                        style={{ position: "relative !important", top: "-52px" }}
+                        style={{
+                            position: "relative !important",
+                            top: "-52px"
+                        }}
                     >
-                        {/* Custom Navigation Buttons */}
+
+                        {/* Left Arrow */}
                         <button
-                            className="case-prev btn border-0 p-0 text-secondary opacity-50 position-absolute start-0 z-3 d-none d-lg-block"
+                            className="case-prev btn border-0 p-0 text-secondary opacity-50 position-absolute start-0 z-3 d-none d-lg-block animate-left"
                             style={{ top: "35%" }}
                         >
                             <BsChevronLeft size={40} />
                         </button>
+
+                        {/* Right Arrow */}
                         <button
-                            className="case-next btn border-0 p-0 text-secondary opacity-50 position-absolute end-0 z-3 d-none d-lg-block"
+                            className="case-next btn border-0 p-0 text-secondary opacity-50 position-absolute end-0 z-3 d-none d-lg-block animate-right"
                             style={{ top: "35%" }}
                         >
                             <BsChevronRight size={40} />
                         </button>
 
                         <div className="col-12 col-md-10 col-lg-8">
+
                             <Swiper
                                 modules={[Navigation, Pagination]}
                                 spaceBetween={30}
@@ -84,10 +96,14 @@ export default function CaseStudies() {
                                     el: ".custom-pagination",
                                 }}
                             >
+
                                 {slides.map((slide, index) => (
+
                                     <SwiperSlide key={index}>
+
                                         {/* Featured Image */}
-                                        <div className="position-relative w-100 shadow-lg">
+                                        <div className="position-relative w-100 shadow-lg animate-up">
+
                                             <Image
                                                 className="w-100 h-auto d-block"
                                                 src={slide.image}
@@ -96,19 +112,26 @@ export default function CaseStudies() {
                                                 alt={slide.title}
                                                 priority
                                             />
+
                                         </div>
 
                                         {/* Content Box */}
                                         <div
-                                            className="p-4 p-md-5 d-flex flex-column gap-3 align-items-start"
-                                            style={{ backgroundColor: "#d9d9d9" }}
+                                            className="p-4 p-md-5 d-flex flex-column gap-3 align-items-start animate-up"
+                                            style={{
+                                                backgroundColor: "#d9d9d9"
+                                            }}
                                         >
+
                                             <h2 className="fs-5 fw-bold fst-italic mb-0 text-dark">
                                                 {slide.title}
                                             </h2>
+
                                             <p
                                                 className="fw-normal mb-2 lh-base text-dark"
-                                                style={{ fontSize: "15px" }}
+                                                style={{
+                                                    fontSize: "15px"
+                                                }}
                                             >
                                                 {slide.description}
                                             </p>
@@ -122,38 +145,73 @@ export default function CaseStudies() {
                                                     borderRadius: "4px",
                                                 }}
                                             >
-                                                Read The Case Study <BsArrowRight />
+                                                Read The Case Study
+                                                <BsArrowRight />
                                             </Link>
+
                                         </div>
+
                                     </SwiperSlide>
+
                                 ))}
+
                             </Swiper>
 
-                            {/* Pagination Container */}
+                            {/* Pagination */}
                             <div className="custom-pagination d-flex justify-content-center gap-2 mt-4"></div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </section>
 
             <style jsx global>{`
-        .custom-pagination .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
-          background-color: #fff;
-          border: 1px solid #6c757d;
-          opacity: 1;
-        }
-        .custom-pagination .swiper-pagination-bullet-active {
-          background-color: #bbb !important;
-        }
-        .transition-scale {
-          transition: transform 0.2s ease;
-        }
-        .transition-scale:hover {
-          transform: scale(1.03);
-        }
-      `}</style>
+
+                .custom-pagination .swiper-pagination-bullet {
+                    width: 12px;
+                    height: 12px;
+                    background-color: #fff;
+                    border: 1px solid #6c757d;
+                    opacity: 1;
+                }
+
+                .custom-pagination .swiper-pagination-bullet-active {
+                    background-color: #bbb !important;
+                }
+
+                .transition-scale {
+                    transition: transform 0.2s ease;
+                }
+
+                .transition-scale:hover {
+                    transform: scale(1.03);
+                }
+
+            `}</style>
+
+            {/* Bottom Yellow Section */}
+            <div
+                className="container col-12 col-md-8 col-lg-7 bg-yellow mb-5 d-flex justify-content-center align-items-center w-75 animate-up"
+                style={{
+                    backgroundColor: "#eef430",
+                    maxHeight: "20px"
+                }}
+            >
+
+                <h1
+                    className="fw-bold mb-0 text-center"
+                    style={{
+                        fontSize: "calc(1.1rem + 1vw)"
+                    }}
+                >
+                    Sectors We Build For
+                </h1>
+
+            </div>
+
         </section>
     );
 }

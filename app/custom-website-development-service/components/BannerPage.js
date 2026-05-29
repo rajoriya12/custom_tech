@@ -3,37 +3,64 @@
 import Link from "next/link";
 
 export default function BannerPage() {
+
     return (
         <>
             <section
                 className="hero"
-                style={{ backgroundImage: "url('/web/main.png')" }}
+                style={{
+                    backgroundImage: "url('/web/main.png')"
+                }}
             >
-                <div className="container px-5 py-5">
-                    <div className="hero-box">
+
+                <div className="container-fluid px-5 py-5">
+
+                    <div
+                        className="hero-box"
+                        style={{
+                            maxWidth: '90%'
+                        }}
+                    >
+
                         <div className="row align-items-center">
-                            <div className="col-lg-6">
-                                <h1 className="fs-1">Custom Website That Build Authority and Drive Action.</h1>
 
-                                <p>
-                                    High performance website or Strategic digital platforms engineered for clarity, usability and measurable growth.
+                            {/* SAME OLD HERO ANIMATION */}
+                            <div className="col-lg-6 animate-left">
 
+                                <h1 className="fs-1 floating-title">
+                                    Custom Website That Build Authority
+                                    and Drive Action.
+                                </h1>
+
+                                <p className="animate-up delay-1">
+                                    High performance website or Strategic
+                                    digital platforms engineered for clarity,
+                                    usability and measurable growth.
                                 </p>
 
-                                <div className="d-flex gap-3">
+                                <div className="d-flex gap-3 animate-up delay-2">
+
                                     <button className="btn-warning-custom">
                                         View Our Portfolio
                                     </button>
 
-                                    <button className="btn-warning-custom">Work With Us</button>
+                                    <button className="btn-warning-custom">
+                                        Work With Us
+                                    </button>
+
                                 </div>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
-                {/* Rectangle 178 - Yellow Accent Bar */}
 
             </section>
+
+            {/* KEEP BORDER SAME */}
             <div
                 style={{
                     width: "100%",

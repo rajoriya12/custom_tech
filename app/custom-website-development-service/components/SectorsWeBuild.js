@@ -15,12 +15,7 @@ export default function SectorsWeBuild() {
             <section className="container-fluid py-5 d-flex flex-column align-items-center gap-4 ">
 
                 {/* Main Header Bar */}
-                <div className="col-12 col-md-8 col-lg-7 bg-yellow d-flex justify-content-center align-items-center py-3 w-60"
-                    style={{ backgroundColor: '#eef430', width: '80%', marginTop: "-10%" }}>
-                    <h1 className="fw-bold mb-0 text-center" style={{ fontSize: 'calc(1.1rem + 1vw)' }}>
-                        Sectors We Build For
-                    </h1>
-                </div>
+               
 
                 {/* Subheading */}
                 <div className="text-center px-3">
@@ -38,7 +33,7 @@ export default function SectorsWeBuild() {
                             <div key={index} className="col d-flex justify-content-center">
                                 <div
                                     className="d-flex flex-column justify-content-center align-items-center p-3 shadow-sm"
-                                    style={{ backgroundColor: '#f5f5f5', width: '237px', minHeight: '163px', border: "3px solid yellow" }}
+                                    style={{ backgroundColor: '#f5f5f5', width: '500px', minHeight: '210px', border: "3px solid yellow" }}
                                 >
                                     <div className="mb-2" style={{ width: '100%', height: '60px', position: 'relative' }}>
                                         <Image

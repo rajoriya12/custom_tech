@@ -8,11 +8,11 @@ import SectorsWeBuild from "./components/SectorsWeBuild";
 import CustomApplicationsImpact from "./components/CustomApplicationsImpact";
 import Footer from "../../components/Footer";
 
-export default function CustomWebiste() {
+export default function CustomWebsite() {
   return (
     <div className="container-fluid p-0 container-outer">
       
-      <div className="container bg-white p-0">
+      <div className="container-fluid bg-white p-0">
         
         <Header />
 

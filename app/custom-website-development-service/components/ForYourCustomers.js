@@ -1,24 +1,51 @@
 'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ForYourCustomers() {
+
     return (
-        <section className="container-fluid py-5" style={{ backgroundColor: '#f3f3f3', marginTop: "-10%" }}>
-            <div className="container py-5 px-4 px-md-5 rounded-5" style={{ backgroundColor: '#ebebeb', width: '90%' }}>
+
+        <section
+            className="container-fluid py-5"
+            style={{
+                backgroundColor: '#f3f3f3',
+                marginTop: "-10%"
+            }}
+        >
+
+            <div
+                className="container-fluid py-5 px-4 px-md-5 rounded-5"
+                style={{
+                    backgroundColor: '#ebebeb',
+                    width: '90%'
+                }}
+            >
 
                 {/* Section Header */}
-                <div className="text-center mb-5">
-                    <h2 className="fw-bold" style={{ color: '#014421', fontSize: '25px' }}>
+                <div className="text-center mb-5 animate-up">
+
+                    <h2
+                        className="fw-bold"
+                        style={{
+                            color: '#014421',
+                            fontSize: '25px'
+                        }}
+                    >
                         For Your Customers
                     </h2>
+
                 </div>
 
-                {/* Top Content Row */}
+                {/* Top Content */}
                 <div className="row g-4 align-items-start mb-5">
+
                     {/* Left Image */}
-                    <div className="col-12 col-lg-6">
+                    <div className="col-12 col-lg-6 animate-left">
+
                         <div className="rounded-3 overflow-hidden shadow-sm">
+
                             <Image
                                 src="/web/customer.jpg"
                                 width={650}
@@ -26,84 +53,163 @@ export default function ForYourCustomers() {
                                 alt="Customer Experience"
                                 className="img-fluid w-100 h-auto object-fit-cover"
                             />
+
                         </div>
+
                     </div>
 
-                    {/* Right Text Content */}
-                    <div className="col-12 col-lg-6">
-                        <h1 className="fw-bold fst-italic lh-tight mb-4" style={{ fontSize: '20px' }}>
-                            Your website is often the first <br></br>experience someone has with your<br></br> brand.
+                    {/* Right Content */}
+                    <div className="col-12 col-lg-6 animate-right">
+
+                        <h1
+                            className="fw-bold fst-italic lh-tight mb-4"
+                            style={{
+                                fontSize: '34px'
+                            }}
+                        >
+                            Your website is often the first
+                            <br />
+                            experience someone has with your
+                            <br />
+                            brand.
                         </h1>
 
-                        <p className="fs-9  fw-bold">
+                        <p className="fs-9 fw-bold animate-up">
 
                             Every interaction shapes perception.
+
                         </p>
 
-                        {/* Highlight Label */}
-                        <div className="d-inline-block bg-black px-3 py-1 " style={{ marginTop: "-10%" }}>
-                            <h3 className="text-yellow fw-bold mb-0" style={{ color: '#EEF430', fontSize: '0.9rem' }}>
+                        {/* Highlight */}
+                        <div
+                            className="d-inline-block bg-black px-3 py-1 animate-up"
+                            style={{
+                                marginTop: "-10%"
+                            }}
+                        >
+
+                            <h3
+                                className="text-yellow fw-bold mb-0"
+                                style={{
+                                    color: '#EEF430',
+                                    fontSize: '0.9rem'
+                                }}
+                            >
                                 Speed. Navigation. Structure. Flow.
                             </h3>
+
                         </div>
+
                     </div>
+
                 </div>
 
-                {/* Bottom Text Content */}
+                {/* Bottom Content */}
                 <div className="mt-4">
-                    <p className="fs-8 fw-bold fst-italic lh-lg mb-4 text-dark">
+
+                    <p className="fs-10 fw-bold fst-italic lh-lg mb-4 text-dark animate-up">
+
                         We build custom digital environments that guide users with clarity—
-                        whether that means <span className="fw-bold fst-normal">custom ecommerce website development</span>,
-                        service pages, booking systems, advanced integrations or modern
-                        <span className="fw-bold fst-normal"> AI features in website experiences</span> or integrated portals.
+                        whether that means
+                        <span className="fw-bold fst-normal">
+                            {" "}custom ecommerce website development
+                        </span>,
+                        service pages, booking systems, advanced integrations
+                        or modern
+                        <span className="fw-bold fst-normal">
+                            {" "}AI features in website experiences
+                        </span>
+                        or integrated portals.
+
                     </p>
 
-                    <h3 className="fw-bold fst-italic mb-2 " style={{ fontSize: '15PX' }}>
+                    <h3
+                        className="fw-bold fst-italic mb-2 animate-up"
+                        style={{
+                            fontSize: '15PX'
+                        }}
+                    >
                         We build platforms that guide users through information and action.
                     </h3>
 
-                    <div className="mb-5">
-                        <h3 className="fw-bold mb-2" style={{ fontSize: '15px' }}>
+                    <div className="mb-5 animate-up">
+
+                        <h3
+                            className="fw-bold mb-2"
+                            style={{
+                                fontSize: '15px'
+                            }}
+                        >
                             Because a well-built website doesn’t just function.
                         </h3>
+
                         <div className="d-inline-block bg-black px-1 py-1">
-                            <h3 className="fw-bold mb-0" style={{ color: '#EEF430', fontSize: '0.9rem' }}>
+
+                            <h3
+                                className="fw-bold mb-0"
+                                style={{
+                                    color: '#EEF430',
+                                    fontSize: '0.9rem'
+                                }}
+                            >
                                 It builds confidence.
                             </h3>
+
                         </div>
+
                     </div>
 
-                    {/* Action Buttons */}
-                    <div className="d-flex flex-column flex-sm-row gap-3">
+                    {/* Buttons */}
+                    <div className="d-flex flex-column flex-sm-row gap-3 animate-up">
+
                         <Link
                             href="/"
                             className="btn fw-bold d-flex align-items-center justify-content-center hover-scale border-0 text-black"
-                            style={{ backgroundColor: '#EEF430', width: '180px', height: '30px', borderRadius: '6px' }}
+                            style={{
+                                backgroundColor: '#EEF430',
+                                width: '180px',
+                                height: '30px',
+                                borderRadius: '6px',
+                                padding: '22px 13px'
+                            }}
                         >
-                            View our Portfolio→
+                            View our Portfolio →
                         </Link>
+
                         <Link
                             href="/solutionservice"
                             className="btn fw-bold d-flex align-items-center justify-content-center hover-scale border-0 text-black"
-                            style={{ backgroundColor: '#EEF430', width: '180px', height: '30px', borderRadius: '6px' }}
+                            style={{
+                                backgroundColor: '#EEF430',
+                                width: '180px',
+                                height: '30px',
+                                borderRadius: '6px',
+                                padding: '22px 13px'
+                            }}
                         >
-                            Work With Us  →
+                            Work With Us →
                         </Link>
+
                     </div>
+
                 </div>
+
             </div>
 
             <style jsx>{`
                 .hover-scale {
                     transition: transform 0.3s ease;
                 }
+
                 .hover-scale:hover {
                     transform: scale(1.05);
                 }
+
                 .text-yellow {
                     color: #EEF430;
                 }
             `}</style>
+
         </section>
     );
 }
