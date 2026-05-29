@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Services() {
+
   const services = [
     {
       title: "Custom Websites",
@@ -11,7 +12,9 @@ export default function Services() {
       img: "/images/img1.webp",
       btnText: "VIEW WEBSITE SOLUTIONS",
       link: "/custom-website-development-service",
+      animation: "animate-left",
     },
+
     {
       title: "Custom Applications",
       subtitle: "Workflow-Specific & User-First",
@@ -20,7 +23,9 @@ export default function Services() {
       img: "/images/img2.webp",
       btnText: "EXPLORE CUSTOM APPS",
       link: "/custom-app-development-service",
+      animation: "animate-right",
     },
+
     {
       title: "System Integrations",
       subtitle: "Harmonious & Frictionless",
@@ -29,7 +34,9 @@ export default function Services() {
       img: "/images/img3.webp",
       btnText: "LEARN ABOUT INTEGRATIONS",
       link: "/system-integration-service",
+      animation: "animate-left",
     },
+
     {
       title: "eCommerce Solutions",
       subtitle: "Scalable & Growth-Ready",
@@ -38,6 +45,7 @@ export default function Services() {
       img: "/images/img4.webp",
       btnText: "SEE E-COMMERCE SUCCESS",
       link: "/ecommerce-solution-service",
+      animation: "animate-right",
     },
   ];
 
@@ -45,52 +53,83 @@ export default function Services() {
     <>
       {/* Banner */}
       <div className="banner-container">
-        <div className="content-wrapper">
+
+        <div className="content-wrapper animate-up">
+
           <h2>
-            Big Tech Capability.<br />
+            Big Tech Capability.
+            <br />
             Scaled For Your Growth.
           </h2>
+
         </div>
+
+        {/* KEEP SAME */}
         <div className="yellow-border"></div>
+
       </div>
 
       {/* Services Section */}
       <section className="services-section">
-        <div className="container">
+
+        <div className="container-fluid">
+
           <div className="row g-4">
+
             {services.map((service, index) => (
-              <div className="col-md-6" key={index}>
-                <div className="service-card">
+
+              <div
+                className="col-md-6"
+                key={index}
+              >
+
+                {/* ONLY CARD ANIMATES */}
+                <div className={`service-card ${service.animation}`}>
+
                   <div className="card-content">
 
-                    <h3>{service.title}</h3>
+                    <h3>
+                      {service.title}
+                    </h3>
+
                     <p className="subtitle">
                       <em>{service.subtitle}</em>
                     </p>
 
                     <div className="service-img-container">
+
                       <Image
                         src={service.img}
                         alt={service.title}
                         fill
                         style={{ objectFit: "cover" }}
                       />
+
                     </div>
 
                     <p className="description">
                       {service.description}
                     </p>
 
-                    <Link href={service.link} className="service-btn">
+                    <Link
+                      href={service.link}
+                      className="service-btn"
+                    >
                       {service.btnText} →
                     </Link>
 
                   </div>
+
                 </div>
+
               </div>
+
             ))}
+
           </div>
+
         </div>
+
       </section>
     </>
   );

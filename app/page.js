@@ -16,33 +16,33 @@ export default function Home() {
 
         <Header />
 
-        <main>
+        <main className="snap-container">
 
-          <section className="p-0">
+          <section className="p-0 snap-section">
             <Hero />
           </section>
 
-          <section>
+          <section className="snap-section">
             <CategoryStrip />
           </section>
 
-          <section>
+          <section className="snap-section">
             <BlueprintSection />
           </section>
 
-          <section>
+          <section className="snap-section">
             <ProcessSection />
           </section>
 
-          <section>
+          <section className="snap-section">
             <Services />
           </section>
 
-          <section>
+          <section className="snap-section">
             <Testimonials />
           </section>
 
-          <section>
+          <section className="snap-section">
             <CTASection />
           </section>
 

@@ -49,7 +49,9 @@ export default function Testimonials() {
   const cardTwoData = testimonials[activeIndex + 1] || testimonials[0];
 
   return (
-    <section className="testimonial-section">
+    <section className="testimonial-section"style={{
+      padding:'5%'
+    }}>
 
       <div className="carousel-view">
 
