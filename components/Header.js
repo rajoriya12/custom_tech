@@ -55,7 +55,7 @@ export default function Header() {
 
       <li>
         <Link
-          href="https://custom-tech-labs-eta.vercel.app/custom-website-development-service"
+          href="https://custom-tech-nine.vercel.app/custom-website-development-service"
           className="dropdown-item"
           onClick={handleClose}
         >
@@ -65,7 +65,7 @@ export default function Header() {
 
       <li>
         <Link
-          href="https://custom-tech-labs-eta.vercel.app/custom-app-development-service"
+          href="https://custom-tech-nine.vercel.app/custom-app-development-service"
           className="dropdown-item"
           onClick={handleClose}
         >
@@ -75,7 +75,7 @@ export default function Header() {
 
       <li>
         <Link
-          href="https://custom-tech-labs-eta.vercel.app/system-integration-service"
+          href="https://custom-tech-nine.vercel.app/system-integration-service"
           className="dropdown-item"
           onClick={handleClose}
         >
@@ -85,7 +85,7 @@ export default function Header() {
 
       <li>
         <Link
-          href="https://custom-tech-labs-eta.vercel.app/ecommerce-solution-service"
+          href="https://custom-tech-nine.vercel.app/ecommerce-solution-service"
           className="dropdown-item"
           onClick={handleClose}
         >
