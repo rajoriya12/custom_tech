@@ -24,21 +24,20 @@ export default function BannerPage() {
 
                         <div className="row align-items-center">
 
-                            {/* SAME OLD HERO ANIMATION */}
-                            <div className="col-lg-6 animate-left">
+                            <div className="col-lg-6">
 
-                                <h1 className="fs-1 floating-title">
+                                <h1 className="fs-1">
                                     Custom Website That Build Authority
                                     and Drive Action.
                                 </h1>
 
-                                <p className="animate-up delay-1">
+                                <p>
                                     High performance website or Strategic
                                     digital platforms engineered for clarity,
                                     usability and measurable growth.
                                 </p>
 
-                                <div className="d-flex gap-3 animate-up delay-2">
+                                <div className="d-flex gap-3">
 
                                     <button className="btn-warning-custom">
                                         View Our Portfolio

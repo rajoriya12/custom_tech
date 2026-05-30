@@ -1,4 +1,5 @@
 'use client';
+
 import Image from "next/image";
 
 const sectors = [
@@ -10,70 +11,133 @@ const sectors = [
 ];
 
 export default function SectorsWeBuild() {
+
     return (
         <>
-            <section className="container-fluid py-5 d-flex flex-column align-items-center gap-4 ">
-
-                {/* Main Header Bar */}
-               
+            <section className="container-fluid py-5 d-flex flex-column align-items-center gap-4">
 
                 {/* Subheading */}
                 <div className="text-center px-3">
-                    <h3 className="fw-normal mb-0" style={{ fontSize: '22px', fontStyle: "italic" }}>
-                        <span className="fw-bold">Different industries. Same friction. Same fix.</span>
+
+                    <h3
+                        className="fw-normal mb-0"
+                        style={{
+                            fontSize: '22px',
+                            fontStyle: "italic"
+                        }}
+                    >
+
+                        <span className="fw-bold">
+                            Different industries. Same friction. Same fix.
+                        </span>
+
                         <br className="d-none d-md-block" />
-                        We connect what should never have been separate in the first place.
+
+                        We connect what should never have been separate
+                        in the first place.
+
                     </h3>
+
                 </div>
-                {/* Sectors Grid */}
-                <div className="container" style={{ maxWidth: '900px' }}>
-                    <div className="row row-cols-1 row-cols-md-3  g-5 justify-content-center">
+
+                {/* Cards */}
+                <div
+                    className="container"
+                    style={{
+                        maxWidth: '900px'
+                    }}
+                >
+
+                    <div className="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
 
                         {sectors.map((sector, index) => (
-                            <div key={index} className="col d-flex justify-content-center">
+
+                            <div
+                                key={index}
+                                className="col d-flex justify-content-center"
+                            >
+
                                 <div
                                     className="d-flex flex-column justify-content-center align-items-center p-3 shadow-sm"
-                                    style={{ backgroundColor: '#f5f5f5', width: '500px', minHeight: '210px', border: "3px solid yellow" }}
+                                    style={{
+                                        backgroundColor: '#f5f5f5',
+                                        width: '500px',
+                                        minHeight: '210px',
+                                        border: "3px solid yellow"
+                                    }}
                                 >
-                                    <div className="mb-2" style={{ width: '100%', height: '60px', position: 'relative' }}>
+
+                                    <div
+                                        className="mb-2"
+                                        style={{
+                                            width: '100%',
+                                            height: '60px',
+                                            position: 'relative'
+                                        }}
+                                    >
+
                                         <Image
                                             src={sector.img}
                                             fill
-                                            style={{ objectFit: 'contain' }}
+                                            style={{
+                                                objectFit: 'contain'
+                                            }}
                                             alt={sector.name}
                                         />
+
                                     </div>
-                                    <h4 className="fw-semibold m-0" style={{ fontSize: '15px' }}>{sector.name}</h4>
+
+                                    <h4
+                                        className="fw-semibold m-0"
+                                        style={{
+                                            fontSize: '15px'
+                                        }}
+                                    >
+                                        {sector.name}
+                                    </h4>
+
                                 </div>
+
                             </div>
 
                         ))}
+
                     </div>
+
                 </div>
-                {/* Bottom Statement */}
+
+                {/* Bottom Text */}
                 <div className="col-12 col-md-8 col-lg-6 text-center mt-0 px-3">
-                    <p className="fw-normal mb-0" style={{ fontSize: '18px', fontStyle: "italic", marginTop: "-6%" }}>
+
+                    <p
+                        className="fw-normal mb-0"
+                        style={{
+                            fontSize: '18px',
+                            fontStyle: "italic",
+                            marginTop: "-6%"
+                        }}
+                    >
+
                         The industries may differ, but the goal stays the same:
+
                         <br className="d-none d-md-block" />
+
                         Replace fragmented technology with connected digital ecosystems.
+
                     </p>
+
                 </div>
-
-                <style jsx>{`
-                .hover-lift {
-                    transition: transform 0.2s ease, box-shadow 0.2s ease;
-                    cursor: default;
-                }
-                .hover-lift:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
-                }
-            `}</style>
-
-
 
             </section>
-            <div style={{ width: '100%', borderTop: '20px solid #eff430', borderBottom: '20px solid #000' }}></div>
+
+            {/* Bottom Border */}
+            <div
+                style={{
+                    width: '100%',
+                    borderTop: '20px solid #eff430',
+                    borderBottom: '20px solid #000'
+                }}
+            ></div>
         </>
     );
 }

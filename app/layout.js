@@ -1,5 +1,5 @@
 import { Inter, Albert_Sans, ABeeZee } from "next/font/google";
-import AnimationProvider from "./AnimationProvider";
+
 export const metadata = {
   title: "Custom Tech Labs",
   description: "Technology Built for the Way People Actually Work",
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en"  className={`${inter.variable} ${albert.variable} ${abeezee.variable} h-full antialiased`}>
       <body>
-        <AnimationProvider />
+
         <BootstrapClient /> {children}</body>
     </html>
   );

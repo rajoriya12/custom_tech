@@ -10,7 +10,7 @@ import Footer from "../../components/Footer";
 
 export default function SystemIntegration() {
   return (
-    <div className="container-fluid p-0 container-outer">
+    <div className="container-fluid p-0 container-outer overflow-hidden">
       
       <div className="container-fluid bg-white p-0">
         

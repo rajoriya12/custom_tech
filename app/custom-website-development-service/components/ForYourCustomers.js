@@ -24,7 +24,7 @@ export default function ForYourCustomers() {
             >
 
                 {/* Section Header */}
-                <div className="text-center mb-5 animate-up">
+                <div className="text-center mb-5">
 
                     <h2
                         className="fw-bold"
@@ -42,7 +42,7 @@ export default function ForYourCustomers() {
                 <div className="row g-4 align-items-start mb-5">
 
                     {/* Left Image */}
-                    <div className="col-12 col-lg-6 animate-left">
+                    <div className="col-12 col-lg-6">
 
                         <div className="rounded-3 overflow-hidden shadow-sm">
 
@@ -59,7 +59,7 @@ export default function ForYourCustomers() {
                     </div>
 
                     {/* Right Content */}
-                    <div className="col-12 col-lg-6 animate-right">
+                    <div className="col-12 col-lg-6">
 
                         <h1
                             className="fw-bold fst-italic lh-tight mb-4"
@@ -74,7 +74,7 @@ export default function ForYourCustomers() {
                             brand.
                         </h1>
 
-                        <p className="fs-9 fw-bold animate-up">
+                        <p className="fs-9 fw-bold">
 
                             Every interaction shapes perception.
 
@@ -82,7 +82,7 @@ export default function ForYourCustomers() {
 
                         {/* Highlight */}
                         <div
-                            className="d-inline-block bg-black px-3 py-1 animate-up"
+                            className="d-inline-block bg-black px-3 py-1"
                             style={{
                                 marginTop: "-10%"
                             }}
@@ -107,7 +107,7 @@ export default function ForYourCustomers() {
                 {/* Bottom Content */}
                 <div className="mt-4">
 
-                    <p className="fs-10 fw-bold fst-italic lh-lg mb-4 text-dark animate-up">
+                    <p className="fs-10 fw-bold fst-italic lh-lg mb-4 text-dark">
 
                         We build custom digital environments that guide users with clarity—
                         whether that means
@@ -124,7 +124,7 @@ export default function ForYourCustomers() {
                     </p>
 
                     <h3
-                        className="fw-bold fst-italic mb-2 animate-up"
+                        className="fw-bold fst-italic mb-2"
                         style={{
                             fontSize: '15PX'
                         }}
@@ -132,7 +132,7 @@ export default function ForYourCustomers() {
                         We build platforms that guide users through information and action.
                     </h3>
 
-                    <div className="mb-5 animate-up">
+                    <div className="mb-5">
 
                         <h3
                             className="fw-bold mb-2"
@@ -160,11 +160,11 @@ export default function ForYourCustomers() {
                     </div>
 
                     {/* Buttons */}
-                    <div className="d-flex flex-column flex-sm-row gap-3 animate-up">
+                    <div className="d-flex flex-column flex-sm-row gap-3">
 
                         <Link
                             href="/"
-                            className="btn fw-bold d-flex align-items-center justify-content-center hover-scale border-0 text-black"
+                            className="btn fw-bold d-flex align-items-center justify-content-center border-0 text-black"
                             style={{
                                 backgroundColor: '#EEF430',
                                 width: '180px',
@@ -178,7 +178,7 @@ export default function ForYourCustomers() {
 
                         <Link
                             href="/solutionservice"
-                            className="btn fw-bold d-flex align-items-center justify-content-center hover-scale border-0 text-black"
+                            className="btn fw-bold d-flex align-items-center justify-content-center border-0 text-black"
                             style={{
                                 backgroundColor: '#EEF430',
                                 width: '180px',
@@ -197,14 +197,6 @@ export default function ForYourCustomers() {
             </div>
 
             <style jsx>{`
-                .hover-scale {
-                    transition: transform 0.3s ease;
-                }
-
-                .hover-scale:hover {
-                    transform: scale(1.05);
-                }
-
                 .text-yellow {
                     color: #EEF430;
                 }

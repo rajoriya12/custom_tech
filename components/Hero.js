@@ -9,35 +9,21 @@ export default function Hero() {
 
             <div className="col-lg-7">
 
-              <h1
-                data-aos="fade-up"
-                className="floating-title"
-              >
+              <h1 className="floating-title">
                 Technology Built for the <br />
                 Way People Actually Work
               </h1>
 
-              <p
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
+              <p>
                 We bridge the gap between complex engineering and human
                 intuition to build tech that users actually enjoy using.
               </p>
 
-              <button
-                className="custom-btn me-2"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
+              <button className="custom-btn me-2">
                 View Our Portfolio
               </button>
 
-              <button
-                className="custom-btn"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
+              <button className="custom-btn">
                 Work With Us
               </button>
 

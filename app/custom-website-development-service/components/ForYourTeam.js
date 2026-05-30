@@ -21,7 +21,7 @@ export default function ForYourTeam() {
                 >
 
                     {/* Top Heading */}
-                    <div className="text-center animate-up">
+                    <div className="text-center">
 
                         <h1
                             style={{
@@ -40,7 +40,7 @@ export default function ForYourTeam() {
                     </div>
 
                     {/* Section Title */}
-                    <div className="text-center mb-5 mt-4 animate-up">
+                    <div className="text-center mb-5 mt-4">
 
                         <h2
                             className="fw-bold"
@@ -56,7 +56,7 @@ export default function ForYourTeam() {
 
                     {/* Main Heading */}
                     <h1
-                        className="fw-semibold fst-italic lh-tight text-dark animate-left"
+                        className="fw-semibold fst-italic lh-tight text-dark"
                         style={{
                             fontSize: '25px',
                             maxWidth: '900px',
@@ -71,7 +71,7 @@ export default function ForYourTeam() {
                     <div className="row g-4 g-lg-5 align-items-start mt-4">
 
                         {/* Image */}
-                        <div className="col-12 col-lg-7 animate-left">
+                        <div className="col-12 col-lg-7">
 
                             <div className="rounded-3 overflow-hidden shadow-sm">
 
@@ -92,7 +92,7 @@ export default function ForYourTeam() {
                         </div>
 
                         {/* Right Content */}
-                        <div className="col-12 col-lg-5 animate-right">
+                        <div className="col-12 col-lg-5">
 
                             <p
                                 className="fs-4 lh-base mb-4"
@@ -107,7 +107,7 @@ export default function ForYourTeam() {
                             </p>
 
                             <h3
-                                className="fw-bold lh-snug mb-4 animate-up"
+                                className="fw-bold lh-snug mb-4"
                                 style={{
                                     fontSize: '20px'
                                 }}
@@ -116,7 +116,7 @@ export default function ForYourTeam() {
                             </h3>
 
                             <p
-                                className="fst-italic lh-lg mb-4 animate-up"
+                                className="fst-italic lh-lg mb-4"
                                 style={{
                                     color: '#8d8d8d',
                                     fontSize: '20px'
@@ -133,7 +133,7 @@ export default function ForYourTeam() {
 
                                     <div
                                         key={idx}
-                                        className={`d-flex align-items-center gap-3 animate-up delay-${idx + 1}`}
+                                        className="d-flex align-items-center gap-3"
                                     >
 
                                         <RxCross2
@@ -162,7 +162,7 @@ export default function ForYourTeam() {
                             </div>
 
                             {/* Result Box */}
-                            <div className="bg-black p-4 rounded-4 shadow animate-up">
+                            <div className="bg-black p-4 rounded-4 shadow">
 
                                 <h3
                                     className="fw-bold mb-2"
@@ -184,7 +184,7 @@ export default function ForYourTeam() {
 
                             {/* Buttons */}
                             <div
-                                className="d-flex gap-3 animate-up"
+                                className="d-flex gap-3"
                                 style={{
                                     marginTop: "20px"
                                 }}

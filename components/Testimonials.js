@@ -15,6 +15,7 @@ const testimonials = [
     <span>The technical execution was flawless,</span> 
     but the human insight was what truly changed our workflow.`
   },
+
   {
     id: 2,
     name: "John D.",
@@ -26,6 +27,7 @@ const testimonials = [
     <span>The technical execution was flawless,</span> 
     but the human insight was what truly changed our workflow.`
   },
+
   {
     id: 3,
     name: "Alex M.",
@@ -33,6 +35,7 @@ const testimonials = [
     image: "/images/sarah.webp",
     text: "Incredible attention to detail. They understood our brand identity perfectly from day one."
   },
+
   {
     id: 4,
     name: "Emily R.",
@@ -43,15 +46,20 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const cardOneData = testimonials[activeIndex];
   const cardTwoData = testimonials[activeIndex + 1] || testimonials[0];
 
   return (
-    <section className="testimonial-section"style={{
-      padding:'5%'
-    }}>
+
+    <section
+      className="testimonial-section"
+      style={{
+        padding: "5%"
+      }}
+    >
 
       <div className="carousel-view">
 
@@ -75,13 +83,17 @@ export default function Testimonials() {
 
       {/* Pagination */}
       <div className="pagination">
+
         {Array.from({ length: testimonials.length - 1 }).map((_, idx) => (
+
           <button
             key={idx}
             className={`dot ${idx === activeIndex ? "active" : ""}`}
             onClick={() => setActiveIndex(idx)}
           />
+
         ))}
+
       </div>
 
       <style jsx>{`
@@ -139,7 +151,7 @@ export default function Testimonials() {
         }
 
         /* =========================
-           MOBILE FIX (NO JS ISSUES)
+           MOBILE FIX
         ========================== */
 
         @media (max-width: 900px) {
@@ -153,7 +165,6 @@ export default function Testimonials() {
             display: none;
           }
 
-          /* ONLY ONE CARD ON MOBILE */
           .second-card {
             display: none;
           }
@@ -175,8 +186,10 @@ export default function Testimonials() {
 ========================= */
 
 function CardContent({ item }) {
+
   return (
-    <div className="content-fade-in">
+
+    <div>
 
       <div className="testimonial-header">
 
@@ -189,13 +202,20 @@ function CardContent({ item }) {
         />
 
         <div>
+
           <h3>{item.name}</h3>
-          <p className="role">{item.role}</p>
+
+          <p className="role">
+            {item.role}
+          </p>
+
         </div>
 
       </div>
 
-      <div className="stars">★★★★★</div>
+      <div className="stars">
+        ★★★★★
+      </div>
 
       <p
         className="testimonial-text"
@@ -203,15 +223,6 @@ function CardContent({ item }) {
       />
 
       <style jsx>{`
-
-        .content-fade-in {
-          animation: fadeIn 0.4s ease;
-        }
-
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(6px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
 
         .testimonial-header {
           display: flex;
@@ -231,7 +242,6 @@ function CardContent({ item }) {
           font-size: 24px;
           line-height: 100%;
           letter-spacing: 0%;
-         
         }
 
         .role {
@@ -241,7 +251,7 @@ function CardContent({ item }) {
 
         .stars {
           color: #ffb400;
-          margin-bottom: 10px;     
+          margin-bottom: 10px;
           font-size: 33px;
         }
 
@@ -250,13 +260,12 @@ function CardContent({ item }) {
           font-weight: 400;
           font-style: italic;
           font-size: 16px;
-     
         }
 
         .testimonial-text span {
           font-weight: 700;
-            font-family: 'Albert Sans', sans-serif;
-           font-size: 16px;
+          font-family: 'Albert Sans', sans-serif;
+          font-size: 16px;
         }
 
       `}</style>

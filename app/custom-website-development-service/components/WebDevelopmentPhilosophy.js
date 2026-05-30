@@ -59,7 +59,7 @@ export default function WebDevelopmentPhilosophy() {
         >
 
             {/* Top Header */}
-            <div className="w-100 bg-black py-2 py-md-3 px-4 animate-up">
+            <div className="w-100 bg-black py-2 py-md-3 px-4">
 
                 <h1
                     className="text-white text-center fw-bold mb-0"
@@ -81,7 +81,7 @@ export default function WebDevelopmentPhilosophy() {
 
                 {/* Subtitle */}
                 <h2
-                    className="text-center fst-italic text-dark mb-5 px-md-5 animate-up"
+                    className="text-center fst-italic text-dark mb-5 px-md-5"
                     style={{
                         fontSize: '25px',
                         lineHeight: '1.3',
@@ -104,14 +104,10 @@ export default function WebDevelopmentPhilosophy() {
 
                         <div
                             key={idx}
-                            className={`col-12 col-md-6 ${
-                                idx % 2 === 0
-                                    ? "animate-left"
-                                    : "animate-right"
-                            }`}
+                            className="col-12 col-md-6"
                         >
 
-                            <div className="border border-dark h-100 px-4 py-3 d-flex flex-column transition-hover bg-transparent">
+                            <div className="border border-dark h-100 px-4 py-3 d-flex flex-column bg-transparent">
 
                                 {/* Icon */}
                                 <div
@@ -167,11 +163,11 @@ export default function WebDevelopmentPhilosophy() {
                 </div>
 
                 {/* Buttons */}
-                <div className="mt-1 pt-4 d-flex flex-column flex-sm-row justify-content-center gap-3 animate-up">
+                <div className="mt-1 pt-4 d-flex flex-column flex-sm-row justify-content-center gap-3">
 
                     <Link
                         href="/"
-                        className="btn fw-bold d-flex align-items-center justify-content-center hover-scale border-0 text-black shadow-sm"
+                        className="btn fw-bold d-flex align-items-center justify-content-center border-0 text-black shadow-sm"
                         style={{
                             backgroundColor: '#EEF430',
                             width: '200px',
@@ -184,7 +180,7 @@ export default function WebDevelopmentPhilosophy() {
 
                     <Link
                         href="/solutionservice"
-                        className="btn fw-bold d-flex align-items-center justify-content-center hover-scale border-0 text-black shadow-sm"
+                        className="btn fw-bold d-flex align-items-center justify-content-center border-0 text-black shadow-sm"
                         style={{
                             backgroundColor: '#EEF430',
                             width: '200px',
@@ -198,26 +194,6 @@ export default function WebDevelopmentPhilosophy() {
                 </div>
 
             </div>
-
-            <style jsx>{`
-
-                .hover-scale {
-                    transition: transform 0.3s ease;
-                }
-
-                .hover-scale:hover {
-                    transform: scale(1.05);
-                }
-
-                .transition-hover {
-                    transition: background-color 0.3s ease;
-                }
-
-                .transition-hover:hover {
-                    background-color: rgba(0,0,0,0.02) !important;
-                }
-
-            `}</style>
 
         </section>
     );

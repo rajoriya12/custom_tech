@@ -46,7 +46,7 @@ export default function CaseStudies() {
                 {/* Header Banner */}
                 <div className="banners-containers banner-container">
 
-                    <div className="content-wrapper animate-up">
+                    <div className="content-wrapper">
                         <h2 className="pt-3">
                             Case Studies
                         </h2>
@@ -66,7 +66,7 @@ export default function CaseStudies() {
 
                         {/* Left Arrow */}
                         <button
-                            className="case-prev btn border-0 p-0 text-secondary opacity-50 position-absolute start-0 z-3 d-none d-lg-block animate-left"
+                            className="case-prev btn border-0 p-0 text-secondary opacity-50 position-absolute start-0 z-3 d-none d-lg-block"
                             style={{ top: "35%" }}
                         >
                             <BsChevronLeft size={40} />
@@ -74,7 +74,7 @@ export default function CaseStudies() {
 
                         {/* Right Arrow */}
                         <button
-                            className="case-next btn border-0 p-0 text-secondary opacity-50 position-absolute end-0 z-3 d-none d-lg-block animate-right"
+                            className="case-next btn border-0 p-0 text-secondary opacity-50 position-absolute end-0 z-3 d-none d-lg-block"
                             style={{ top: "35%" }}
                         >
                             <BsChevronRight size={40} />
@@ -102,7 +102,7 @@ export default function CaseStudies() {
                                     <SwiperSlide key={index}>
 
                                         {/* Featured Image */}
-                                        <div className="position-relative w-100 shadow-lg animate-up">
+                                        <div className="position-relative w-100 shadow-lg">
 
                                             <Image
                                                 className="w-100 h-auto d-block"
@@ -117,7 +117,7 @@ export default function CaseStudies() {
 
                                         {/* Content Box */}
                                         <div
-                                            className="p-4 p-md-5 d-flex flex-column gap-3 align-items-start animate-up"
+                                            className="p-4 p-md-5 d-flex flex-column gap-3 align-items-start"
                                             style={{
                                                 backgroundColor: "#d9d9d9"
                                             }}
@@ -138,7 +138,7 @@ export default function CaseStudies() {
 
                                             <Link
                                                 href="/"
-                                                className="btn fw-bold px-4 py-2 d-inline-flex align-items-center gap-2 border-0 transition-scale"
+                                                className="btn fw-bold px-4 py-2 d-inline-flex align-items-center gap-2 border-0"
                                                 style={{
                                                     backgroundColor: "#EEF430",
                                                     fontSize: "13px",
@@ -182,19 +182,11 @@ export default function CaseStudies() {
                     background-color: #bbb !important;
                 }
 
-                .transition-scale {
-                    transition: transform 0.2s ease;
-                }
-
-                .transition-scale:hover {
-                    transform: scale(1.03);
-                }
-
             `}</style>
 
             {/* Bottom Yellow Section */}
             <div
-                className="container col-12 col-md-8 col-lg-7 bg-yellow mb-5 d-flex justify-content-center align-items-center w-75 animate-up"
+                className="container col-12 col-md-8 col-lg-7 bg-yellow mb-5 d-flex justify-content-center align-items-center w-75"
                 style={{
                     backgroundColor: "#eef430",
                     maxHeight: "20px"

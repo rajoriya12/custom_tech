@@ -2,7 +2,6 @@ import "../app/process.css";
 
 export default function ProcessContainer() {
   return (
-
     <div
       className="process-container py-0"
       style={{
@@ -13,7 +12,7 @@ export default function ProcessContainer() {
       {/* STEP 1 */}
       <div className="step-wrapper right">
 
-        <div className="card animate-right">
+        <div className="card">
 
           <div className="accent-bar left-accent"></div>
 
@@ -42,7 +41,7 @@ export default function ProcessContainer() {
       {/* STEP 2 */}
       <div className="step-wrapper left">
 
-        <div className="card animate-left">
+        <div className="card">
 
           <div className="accent-bar right-accent"></div>
 
@@ -73,7 +72,7 @@ export default function ProcessContainer() {
       {/* STEP 3 */}
       <div className="step-wrapper right">
 
-        <div className="card animate-right">
+        <div className="card">
 
           <div className="accent-bar left-accent"></div>
 
@@ -103,7 +102,7 @@ export default function ProcessContainer() {
       {/* STEP 4 */}
       <div className="step-wrapper left">
 
-        <div className="card animate-left">
+        <div className="card">
 
           <div className="accent-bar right-accent"></div>
 
@@ -133,7 +132,7 @@ export default function ProcessContainer() {
       {/* STEP 5 */}
       <div className="step-wrapper right">
 
-        <div className="card animate-right">
+        <div className="card">
 
           <div className="accent-bar left-accent"></div>
 

@@ -23,7 +23,7 @@ export default function CustomApplicationsImpact() {
 
                     {/* Heading */}
                     <div
-                        className="d-inline-block mb-5 animate-left"
+                        className="d-inline-block mb-5"
                         style={{
                             backgroundColor: 'black',
                             marginLeft: "100px",
@@ -57,7 +57,7 @@ export default function CustomApplicationsImpact() {
 
                             <div
                                 key={idx}
-                                className={`col-12 col-lg-9 d-flex align-items-center gap-3 p-3 p-md-4 border border-2 border-yellow bg-transparent animate-up delay-${idx + 1}`}
+                                className="col-12 col-lg-9 d-flex align-items-center gap-3 p-3 p-md-4 border border-2 border-yellow bg-transparent"
                                 style={{
                                     borderColor: '#EEF430 !important'
                                 }}
@@ -98,7 +98,7 @@ export default function CustomApplicationsImpact() {
 
                     {/* CTA BOX */}
                     <div
-                        className="mt-5 p-4 p-md-5 rounded-3 d-flex flex-column align-items-center animate-up"
+                        className="mt-5 p-4 p-md-5 rounded-3 d-flex flex-column align-items-center"
                         style={{
                             backgroundColor: '#d9d9d9'
                         }}
@@ -106,7 +106,7 @@ export default function CustomApplicationsImpact() {
 
                         {/* Black Banner */}
                         <div
-                            className="col-12 col-lg-10 bg-black rounded-4 p-2 p-md-3 text-center mb-4 w-100 animate-up"
+                            className="col-12 col-lg-10 bg-black rounded-4 p-2 p-md-3 text-center mb-4 w-100"
                         >
 
                             <h2
@@ -127,18 +127,18 @@ export default function CustomApplicationsImpact() {
 
                         </div>
 
-                        <p className="fs-5 text-center mb-4 text-dark fw-medium animate-up">
+                        <p className="fs-5 text-center mb-4 text-dark fw-medium">
 
                             Let’s build something that moves your business forward
 
                         </p>
 
                         {/* Buttons */}
-                        <div className="d-flex flex-column flex-sm-row gap-3 animate-up">
+                        <div className="d-flex flex-column flex-sm-row gap-3">
 
                             <Link
                                 href="/"
-                                className="btn fw-bold d-flex align-items-center justify-content-center hover-scale border-0 text-black"
+                                className="btn fw-bold d-flex align-items-center justify-content-center border-0 text-black"
                                 style={{
                                     backgroundColor: '#EEF430',
                                     width: '181px',
@@ -150,7 +150,7 @@ export default function CustomApplicationsImpact() {
 
                             <Link
                                 href="/solutionservice"
-                                className="btn fw-bold d-flex align-items-center justify-content-center hover-scale border-0 text-black"
+                                className="btn fw-bold d-flex align-items-center justify-content-center border-0 text-black"
                                 style={{
                                     backgroundColor: '#EEF430',
                                     width: '180px',
@@ -167,14 +167,6 @@ export default function CustomApplicationsImpact() {
                 </div>
 
                 <style jsx>{`
-                    .hover-scale {
-                        transition: transform 0.3s ease;
-                    }
-
-                    .hover-scale:hover {
-                        transform: scale(1.05);
-                    }
-
                     .border-yellow {
                         border-color: #EEF430 !important;
                     }

@@ -4,23 +4,20 @@ export default function BlueprintSection() {
   return (
     <>
       {/* Header */}
-      <div className="blueprint-header animate-up">
+      <div className="blueprint-header">
         <span style={{ color: "#EEF430" }}>
           The Tech Blueprint for the
-        </span>
-        {" "}
+        </span>{" "}
         <b>Best User Experience</b>
       </div>
 
       {/* Section */}
       <section className="blueprint-section">
-
         <div className="container-blueprint">
-
           <div className="row align-items-center">
-
+            
             {/* Image */}
-            <div className="col-md-6 text-center animate-left">
+            <div className="col-md-6 text-center">
               <Image
                 src="/images/blueprint.webp"
                 alt="Blueprint"
@@ -31,30 +28,26 @@ export default function BlueprintSection() {
             </div>
 
             {/* Content */}
-            <div className="col-md-5 animate-right">
-
-              <h4 className="mb-3 delay-2">
+            <div className="col-md-5">
+              <h4 className="mb-3">
                 Custom websites, applications, and integrations designed
                 with a "people first" mindset.
               </h4>
 
-              <p className="mb-3 delay-3">
+              <p className="mb-3">
                 Unlike most tech companies, we don’t start with a tech stack.
                 We don’t tell you how good we know our tech and coding.
               </p>
 
-              <p className="mb-0 delay-4">
+              <p className="mb-0">
                 Our approach ensures the final product isn't just technically
                 sound, but creates an experience that makes users want to
                 return again and again.
               </p>
-
             </div>
 
           </div>
-
         </div>
-
       </section>
     </>
   );
