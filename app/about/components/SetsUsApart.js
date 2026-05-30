@@ -3,7 +3,7 @@ export default function SetsUsApart() {
     <>
       <section className="container-fluid p-0 overflow-hidden sets-apart">
         <div
-          className="container my-5 py-5 text-center d-flex flex-column align-items-center gap-4"
+          className="container-fluid my-5 py-5 text-center d-flex flex-column align-items-center gap-4"
           style={{ backgroundColor: "#f5f5f5", borderRadius: "1rem" }}
         >
           {/* Header Badge */}

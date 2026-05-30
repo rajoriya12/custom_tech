@@ -10,11 +10,11 @@ export default function PeopleWork() {
             <h2 className="pt-3">The people behind the work</h2>
           </div>
         </div>
-        <div className="container py-5">
+        <div className="container-fluid py-5">
           <div className="row flex-column gap-5">
             {/* Person 1 - Left Image */}
             <div className="row align-items-center g-4">
-              <div className="col-12 col-md-5">
+              <div className="col-12 col-md-4">
                 <div className="position-relative" style={{ height: "300px" }}>
                   <Image
                     className="object-fit-cover"
@@ -51,7 +51,7 @@ export default function PeopleWork() {
 
             {/* Person 2 - Right Image (Reverse on Desktop) */}
             <div className="row align-items-center g-4 flex-md-row-reverse">
-              <div className="col-12 col-md-5">
+              <div className="col-12 col-md-4">
                 <div className="position-relative" style={{ height: "300px" }}>
                   <Image
                     className="object-fit-cover"
@@ -86,7 +86,7 @@ export default function PeopleWork() {
 
             {/* Person 3 - Left Image */}
             <div className="row align-items-center g-4">
-              <div className="col-12 col-md-5">
+              <div className="col-12 col-md-4">
                 <div className="position-relative" style={{ height: "300px" }}>
                   <Image
                     className="object-fit-cover "

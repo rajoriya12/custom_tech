@@ -21,7 +21,7 @@ export default function WhatDesign() {
   ];
 
   return (
-    <section className="container py-5" style={{ backgroundColor: "#F5F5F5" }}>
+    <section className="container-fluid py-5" style={{ backgroundColor: "#F5F5F5" }}>
       {/* Header */}
       <div className="d-flex justify-content-center mb-5">
         <h1 className="what-we-do-new">What We Do</h1>

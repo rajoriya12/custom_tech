@@ -538,7 +538,6 @@ span {
 .scrollers-tracks {
   display: flex;
   align-items: center;
-  width: max-content;
 
   /* Desktop = NO scroll */
   animation: none;

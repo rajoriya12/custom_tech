@@ -21,7 +21,7 @@ export default function WhatWeDo() {
   ];
 
   return (
-    <section className="container py-5">
+    <section className="container-fluid py-5">
       <div className="row justify-content-center text-center mb-5">
         <div className="col-12 col-lg-10">
           {/* Header Badge */}

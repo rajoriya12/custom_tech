@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function OurPhilosophy() {
   return (
     <section className="container-fluid py-5 px-3 px-md-5">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row justify-content-center ">
           <div className="col-auto">
             {/* Heading */}

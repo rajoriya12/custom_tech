@@ -15,7 +15,7 @@ import CategoryStrip from "./components/CategoryStrip";
 export default function About() {
   return (
     <div className="container-fluid p-0 container-outer">
-      <div className="container bg-white p-0">
+      <div className="container-fluid bg-white p-0">
         <Header />
 
         <main>

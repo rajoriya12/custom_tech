@@ -14,8 +14,8 @@ export default function CategoryStrip() {
         <div className="text-center ">
           {/* THE SCROLLER START */}
           <div className="scrollers-containers">
-            <div className="scrollers-tracks">
-              {/* Set 1 */}
+            <div className="scrollers-tracks d-flex justify-content-between ">
+              {/* Set 1 */} 
               <Link href="#app-design" className="scrollers-links">
                 App Design
               </Link>
