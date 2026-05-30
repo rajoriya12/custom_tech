@@ -1,67 +1,91 @@
 'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 
 export default function BannerPage() {
+
     return (
         <>
             <section
-                className="container-fluid"
+                className="container-fluid position-relative overflow-hidden p-0"
                 style={{
-                    Height: '85%',
                     backgroundImage: "url('/system/hero.png')",
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
-
+                    minHeight: '700px',
                 }}
-
             >
 
+                {/* Mobile Image */}
+                <div
+                    className="d-md-none position-relative w-100"
+                    style={{
+                        height: '260px'
+                    }}
+                >
 
-                {/* Mobile Image - Visible only on xs/sm */}
-                <div className="d-md-none w-100 mb-0 ps-0" style={{ height: '250px', position: 'relative', objectFit: "cover" }}>
                     <Image
                         src="/system/hero1.png"
+                        alt="Hero Banner"
                         fill
                         priority
-                        alt="hero Banner"
-
-
+                        style={{
+                            objectFit: "cover",
+                            objectPosition: "center"
+                        }}
                     />
 
                 </div>
 
-                <div className="container px-md-5 banner-caption">
-                    <div className="row">
+                {/* Content */}
+                <div className="container px-4 px-md-5">
+
+                    <div
+                        className="row align-items-center"
+                        style={{
+                            minHeight: '700px'
+                        }}
+                    >
+
                         <div className="col-12 col-md-7 col-lg-6 text-center text-md-start">
 
                             {/* Heading */}
-                            <h1 className="display-5 fw-extrabold mb-4 lh-tight main-heading">
-                                Systems That Work Together — So Your <br className="d-none d-md-block" />
+                            <h1 className="display-5 fw-bold mb-4 lh-tight">
+
+                                Systems That Work Together — So Your
+
+                                <br className="d-none d-md-block" />
+
                                 Business Can Move Faster
+
                             </h1>
 
-                            {/* Paragraphs */}
-                            <p className="fs-5 fw-semibold mb-3 lh-base font-albert">
-                                At Custom Labs, we provide system integration services that connect
-                                your tools, remove manual work, and create a single system your
-                                team can rely on.
+                            {/* Paragraph */}
+                            <p className="fs-5 fw-semibold mb-3 lh-base">
+
+                                At Custom Labs, we provide system integration
+                                services that connect your tools, remove manual
+                                work, and create a single system your team can
+                                rely on.
+
                             </p>
 
-                            <p className="fs-6  mb-5  font-albert"
+                            <p className="fs-6 mb-5">
 
-                            >
-                                Because disconnected systems don’t just slow you down, they create
-                                problems you shouldn’t have to manage.
+                                Because disconnected systems don’t just slow
+                                you down, they create problems you shouldn’t
+                                have to manage.
+
                             </p>
 
                             {/* Buttons */}
-                            <div className="d-flex flex-column flex-md-row gap-3 ps-1 pt-4 w-100 justify-content-center">
+                            <div className="d-flex flex-column flex-md-row gap-3 justify-content-center justify-content-md-start">
 
                                 <Link
                                     href="/"
-                                    className="btn fw-bold border-0 shadow-sm transition-scale d-flex align-items-center justify-content-center"
+                                    className="btn fw-bold border-0 shadow-sm d-flex align-items-center justify-content-center"
                                     style={{
                                         backgroundColor: '#EEF430',
                                         borderRadius: '4px',
@@ -75,7 +99,7 @@ export default function BannerPage() {
 
                                 <Link
                                     href="/solutionservice"
-                                    className="btn fw-bold border-0 shadow-sm transition-scale d-flex align-items-center justify-content-center"
+                                    className="btn fw-bold border-0 shadow-sm d-flex align-items-center justify-content-center"
                                     style={{
                                         backgroundColor: '#EEF430',
                                         borderRadius: '4px',
@@ -90,17 +114,38 @@ export default function BannerPage() {
                             </div>
 
                         </div>
+
                     </div>
+
                 </div>
 
                 <style jsx>{`
-                .hover-scale:hover {
-                    transform: scale(1.05);
-                }
-              
-            `}</style>
+
+                    @media (max-width: 768px) {
+
+                        section {
+                            min-height: auto !important;
+                            background-image: none !important;
+                            background-color: #f5f5f5;
+                        }
+
+                        .row {
+                            min-height: auto !important;
+                            padding-top: 40px;
+                            padding-bottom: 40px;
+                        }
+
+                        h1 {
+                            font-size: 2rem !important;
+                        }
+
+                    }
+
+                `}</style>
 
             </section>
+
+            {/* Bottom Border */}
             <div
                 style={{
                     width: "100%",
@@ -109,6 +154,6 @@ export default function BannerPage() {
                     borderBottom: "20px solid #000",
                 }}
             ></div>
-
-        </>);
+        </>
+    );
 }
